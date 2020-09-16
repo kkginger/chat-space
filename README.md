@@ -10,20 +10,20 @@
 | password  | string | null: false |
 
 ### Association
-- has_many :group, through: :group_users
-- has_many :group_users
+- has_many :groups, through: :groups_users
+- has_many :groups_users
 - has_many :massages
 
 
-## groupテーブル
+## groupsテーブル
 
 |Column |type |Options |
 |-------|-----|--------|
 | name | string | null: false, unipue: true |
 
 ### Association
-- has_many :users, through: :group_users
-- has_many :group_users
+- has_many :users, through: :groups_users
+- has_many :groups_users
 - has_many :messages
 
 
@@ -41,7 +41,7 @@
 - belongs_to :group
 
 
-## group_usersテーブル
+## groups_usersテーブル
 
 |Column |type |Options |
 |-------|-----|--------|
