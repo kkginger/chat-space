@@ -19,7 +19,7 @@
 
 |Column |type |Options |
 |-------|-----|--------|
-| name | string | index: true, null: false, unipue: true |
+| name | string | null: false, unipue: true |
 
 ### Association
 - has_many :users, through: :group_users
@@ -31,7 +31,7 @@
 
 |Column |type |Options |
 |-------|-----|--------|
-| body     | text    | null: false |
+| body     | text    |  |
 | image    | string  |  |
 | group | integer | foreign_key: true |
 | user  | integer | foreign_key: true |
